@@ -2,26 +2,21 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Work Sans';
+	color: white;
 }
 
-body {
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.banner {
 	z-index: 1;
-	background: linear-gradient(-45deg, #0E131F,#273659);
 	background-size: 400% 400%;
 	width: 100%;
 	height: 100vh;
-	animation: animate 15s ease infinite;
-}
-.cousrses{
-	background: linear-gradient(-45deg, #0E131F,#273659);
-}
-
-.banner-1 {
-	z-index: 1;
-	background: linear-gradient(-45deg, #0E131F,#273659);
-	width: 100%;
-	animation: animate 15s ease infinite;
-    padding-bottom: 20px;
+	background: linear-gradient(rgb(32, 37, 50),black);
 }
 
 .banner-img img{
@@ -31,29 +26,21 @@ body {
     bottom: 70px;
 }
 
-@keyframes animate {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.navbar{
+	border-bottom: 1px solid gray;
+	position: absolute;
+	background-color: rgb(32, 37, 50);
 }
-
 
 .banner-text {
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    height: 100vh; /* Set height to 100% of viewport height */
+    align-items: center; 
+    justify-content: center;
+    height: calc(100vh - 80px);
 }
 .banner-head{
-    /* Your additional styles for the text */
-    font-size: 3rem; /* Example font size */
-    font-weight: bold; /* Example font weight */
+    font-size: 3rem;
+    font-weight: bold;
 }
 .sub-text{
 	font-size: 20px;
@@ -65,7 +52,7 @@ body {
 	font-size: larger;
 	-webkit-text-stroke: #23d5ab;
 	text-transform: capitalize;
-	font-family: monospace;
+	font-family: 'IBM Plex Mono';
 	background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 300%;
 	-webkit-background-clip: text;
@@ -90,4 +77,33 @@ body {
 .col-4{
 	max-width: 300px;
 	margin: 10px;
+}
+
+.review{
+	background-color: #14171C;
+	border: 1px solid #25272C;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.review-img{
+	width: 30px;
+	margin-top:15px;
+}
+
+
+.list-unstyled li{
+	padding-top: 10px;
+	text-decoration: none;
+	color: grey;
+}
+.list-unstyled li:nth-child(1){
+	padding-top: 20px;
+	text-decoration: none;
+	color: grey;
+}
+
+.list-unstyled li a{
+	text-decoration: none;
+	color: grey;
 }
