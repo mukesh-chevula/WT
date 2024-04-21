@@ -133,7 +133,7 @@
               </div>
               <div class="row text-center">
                 <span class="text-secondary small">
-                  Already have an account? <a href="index.html">register</a>
+                  Already have an account? <a href="login.html">Login</a>
                 </span>
               </div>
             </form>
@@ -142,6 +142,27 @@
       </div>
     </div>
 
-    <script src="./assets/js/script.js"></script>
+    <script>
+    
+function handleRegistration(event) {
+  event.preventDefault();
+
+  const fullName = document.getElementById("fullName").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  const user = {
+    fullName,
+    email,
+    password
+  };
+
+  localStorage.setItem("user", JSON.stringify(user));
+
+  window.location.href = "/login.html";
+}
+
+const registrationForm = document.getElementById("registrationForm");
+registrationForm.addEventListener("submit", handleRegistration);</script>
   </body>
 </html>
