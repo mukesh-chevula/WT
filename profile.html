@@ -75,12 +75,154 @@
     </head>
 
     <main class="bg-black h-100vh">
-      <div class="container">
+      <div class="container py-5">
         <div class="row">
-            <div class="col-4">
-                
+          <div class="col-md-3 py-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="v-pills-tab1" data-toggle="pill" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Personal Details</a>
+              <a class="nav-link" id="v-pills-tab2" data-toggle="pill" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Change Password</a>
+              <a class="nav-link" id="v-pills-tab3" href="index.html">Log Out</a>
             </div>
-            <div class="col"></div>
+          </div>
+          <div class="col-md-9 ps-5">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="v-pills-tab1">
+                <div class="container">
+                  <div class="row fw-bold fs-3 my-5">
+                    Personal Details
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 fs-5">
+                            <img src="./assets/images/user.svg" width="100px" class="mx-5" alt="profile">&nbsp;
+      <input type="file" class="form-control-sm py-3">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="firstName"
+                          id="firstName"
+                          placeholder=""
+                        />
+                        <label for="firstName" class="text-black ">First Name</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="lastName"
+                          id="lastName"
+                          placeholder=""
+                        />
+                        <label for="lastName" class="text-black ">Last Name</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          placeholder=""
+                        />
+                        <label for="email" class="text-black ">Email</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          name="phone"
+                          id="phone"
+                          placeholder=""
+                        />
+                        <label for="phone" class="text-black ">Phone:</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="instituteName"
+                          id="instituteName"
+                          placeholder=""
+                        />
+                        <label for="instituteName" class="text-black ">Name of Institution</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="addressOfInstitution"
+                          id="addressOfInstitution"
+                          placeholder=""
+                        />
+                        <label for="addressOfInstitution" class="text-black ">Address of Institution</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col"><button class="btn btn-primary p-3 ">
+                      Submit
+                    </button></div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="v-pills-tab2">
+                <div class="container">
+                  <div class="row fw-bold fs-3 my-5">
+                    Change Password
+                  </div> 
+                  <div class="row">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="oldPassword"
+                        id="oldPassword"
+                        placeholder=""
+                        value=""
+                      />
+                      <label for="oldPassword" class="text-black px-5 px-5">Old Password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="newPassword"
+                        id="newPassword"
+                        placeholder=""
+                      />
+                      <label for="newPassword" class="text-black px-5">New Password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="confirmPassword"
+                        id="confirmPassword"
+                        placeholder=""
+                      />
+                      <label for="confirmPassword" class="text-black px-5">Confirm Password</label>
+                      <button class="btn my-3 p-3 btn-primary ">
+                        Submit
+                      </button>
+                    </div>
+                  </div>               
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -91,8 +233,8 @@
             <div class="col-3">
               <ul class="list-unstyled">
                 <li><span class="fs-4">About</span></li>
-                <li><a href="/">Our Story</a></li>
-                <li><a href="/">Privacy Policy</a></li>
+                <li><a href="/about.html">Our Story</a></li>
+                <li><a href="/about.html">Privacy Policy</a></li>
                 <li><a href="faq.html">FAQ</a></li>
               </ul>
             </div>
@@ -100,8 +242,8 @@
               <ul class="list-unstyled">
                 <li><span class="fs-4">Quick Links</span></li>
                 <li><a href="course.html">Courses</a></li>
-                <li><a href="/">My Account</a></li>
-                <li><a href="/">Course Dashboard</a></li>
+                <li><a href="/profile.html">My Account</a></li>
+                <li><a href="/index.html">Course Dashboard</a></li>
               </ul>
             </div>
             <div class="col-3">
@@ -135,5 +277,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

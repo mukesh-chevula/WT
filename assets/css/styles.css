@@ -11,6 +11,7 @@ a{
 	color: white;
 }
 
+
 .banner {
 	z-index: 1;
 	background-size: 400% 400%;
@@ -107,3 +108,11 @@ a{
 	text-decoration: none;
 	color: grey;
 }
+
+.tab-content .tab-pane {
+	display: none;
+  }
+.tab-content .tab-pane.active {
+	display: block;
+}
+
