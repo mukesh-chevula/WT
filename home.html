@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
+<body >
     <head>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid mx-5 my-3">
@@ -20,9 +20,6 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link fs-4 text-white" aria-current="page" href="#courses">Courses</a>
-                  </li>
                   <li class="nav-item">
                     <a class="nav-link fs-4 text-white" href="about.html">About</a>
                   </li>
@@ -44,10 +41,10 @@
     </head>
 
     <main>
-      <section class="banner">
+      <section class="banner px-1">
         <div class="container">
-            <div class="row m-0 row-cols-md-1">
-                <div class="col-md-6 banner-img d-sm-none d-md-block">
+            <div class="row m-0 row-cols-md-1 justify-content-center align-items-center">
+                <div class="col-md-6 banner-img text-center mt-2 d-none d-md-block">
                     <img src="./assets/images/banner-img-1.png" alt="banner"/>
                 </div>
                 <div class="col-md-6 banner-text">
@@ -67,7 +64,7 @@
     </section>
     
     
-      <section class="courses pb-5  bg-black" id="courses">
+      <section class="courses pb-5 bg-black px-1" id="courses">
           <div class="container">
               <div class="row text-center">
                 <div class="text-white">
@@ -75,9 +72,8 @@
                     Project-Based</span> Courses for Career Growth</span><br><br>
                 </div>
               </div>
-              <div class="row mt-5  row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
-                <div class="card-group w-75">
-                  <div class="col card text-white p-3 bg-dark border-1 m-1 pb-0 rounded">
+              <div class="row mt-5  row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 justify-content-center" style="max-width: 100%;">
+                  <div class="col card text-white p-3 bg-dark border-1 m-1 pb-0 rounded " >
                     <img class="card-img-top" src="./assets/images/course2.jpeg" alt="Title" />
                     <div class="card-body">
                       <h4 class="card-title fs-5">Multi-Vendor MERN Stack E-commerce project With All functionalities absolutely for beginners</h4>
@@ -110,20 +106,19 @@
                     </p>
                   </div>
               </div>
-              </div>
                 </div>
           </div>
       </section>
 
-      <section class="reviews bg-black">
+      <section class="reviews bg-black px-2">
         <div class="container">
           <div class="row text-center">
             <div class="text-white">
               <span class="fw-bold banner-head">Let's see our students <span class="animated-text">Reactions</span></span><br><br>
             </div>
           </div>
-          <div class="row ">
-            <div class="col col-sm-12 col-md-6 me-2">
+          <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 ">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 me-lg-2 me-0">
               <div class="row review my-3">
                 <div class="container-fluid">
                   <div class="row">
@@ -145,72 +140,192 @@
                 </div>
               </div>
               <div class="row review my-3">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-1"><img src="./assets/images/user.svg" alt="Profile" class="review-img"></div>
-                    <div class="col-8">
-                      <span class="fw-bold fs-4">Ch Pradeep</span><br><span class="text-secondary">Student | CBIT , Hyderabad</span>
-                    </div>
-                    <div class="col">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                    </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-1">
+                    <img
+                      src="./assets/images/user.svg"
+                      alt="Profile"
+                      class="review-img"
+                    />
                   </div>
-                  <div class="row mt-2">
-                    <p class="text-secondary fs-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks for your amazing programming tutorial channel! Your teaching style is outstanding, and the quality of your tutorials is top-notch. Your ability to break down complex topics into manageable parts, and cover diverse programming languages and topics is truly impressive. The practical applications and real-world examples you incorporate reinforce the theoretical knowledge and provide valuable insights. Your engagement with the audience fosters a supportive learning environment. Thank you for your dedication, expertise, and passion for teaching programming, and keep up the fantastic work!</p>
+                  <div class="col-6">
+                    <span class="fw-bold fs-4">Ch Pradeep</span><br /><span
+                      class="text-secondary"
+                      >Student | CBIT , Hyderabad</span
+                    >
                   </div>
+                  <div class="col-5 col-md-4">
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/half-star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <p class="text-secondary fs-5">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks for your amazing
+                    programming tutorial channel! Your teaching style is
+                    outstanding, and the quality of your tutorials is top-notch.
+                    Your ability to break down complex topics into manageable
+                    parts, and cover diverse programming languages and topics is
+                    truly impressive. The practical applications and real-world
+                    examples you incorporate reinforce the theoretical knowledge
+                    and provide valuable insights. Your engagement with the
+                    audience fosters a supportive learning environment. Thank
+                    you for your dedication, expertise, and passion for teaching
+                    programming, and keep up the fantastic work!
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col ms-2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 ms-lg-2 ms-0">
               <div class="row review my-3">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-1"><img src="./assets/images/user.svg" alt="Profile" class="review-img"></div>
-                    <div class="col-8">
-                      <span class="fw-bold fs-4">Ch Pradeep</span><br><span class="text-secondary">Student | CBIT , Hyderabad</span>
-                    </div>
-                    <div class="col">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                    </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-1">
+                    <img
+                      src="./assets/images/user.svg"
+                      alt="Profile"
+                      class="review-img"
+                    />
                   </div>
-                  <div class="row mt-2">
-                    <p class="text-secondary fs-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks for your amazing programming tutorial channel! Your teaching style is outstanding, and the quality of your tutorials is top-notch. Your ability to break down complex topics into manageable parts, and cover diverse programming languages and topics is truly impressive. The practical applications and real-world examples you incorporate reinforce the theoretical knowledge and provide valuable insights. Your engagement with the audience fosters a supportive learning environment. Thank you for your dedication, expertise, and passion for teaching programming, and keep up the fantastic work!</p>
+                  <div class="col-6">
+                    <span class="fw-bold fs-4">Ch Pradeep</span><br /><span
+                      class="text-secondary"
+                      >Student | CBIT , Hyderabad</span
+                    >
+                  </div>
+                  <div class="col-5 col-md-4">
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/half-star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
                   </div>
                 </div>
-              </div>
-              <div class="row review my-3">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-1"><img src="./assets/images/user.svg" alt="Profile" class="review-img"></div>
-                    <div class="col-8">
-                      <span class="fw-bold fs-4">Ch Mukesh</span><br><span class="text-secondary">Student | CBIT , Hyderabad</span>
-                    </div>
-                    <div class="col">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                      <img src="./assets/images/star.svg" alt="Star" style="width: 20px;">
-                    </div>
-                  </div>
-                  <div class="row mt-2">
-                    <p class="text-secondary fs-5">I had the pleasure of exploring My-JUS, a website that provides an extensive range of courses on various tech-related topics. I was thoroughly impressed with my experience, as the website offers a comprehensive selection of courses that cater to different skill levels and interests. If you're looking to enhance your knowledge and skills in the tech industry, I highly recommend checking out My-JUS!</p>
-                  </div>
+                <div class="row mt-2">
+                  <p class="text-secondary fs-5">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks for your amazing
+                    programming tutorial channel! Your teaching style is
+                    outstanding, and the quality of your tutorials is top-notch.
+                    Your ability to break down complex topics into manageable
+                    parts, and cover diverse programming languages and topics is
+                    truly impressive. The practical applications and real-world
+                    examples you incorporate reinforce the theoretical knowledge
+                    and provide valuable insights. Your engagement with the
+                    audience fosters a supportive learning environment. Thank
+                    you for your dedication, expertise, and passion for teaching
+                    programming, and keep up the fantastic work!
+                  </p>
                 </div>
               </div>
+            </div>
+            <div class="row review my-3">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-1">
+                    <img
+                      src="./assets/images/user.svg"
+                      alt="Profile"
+                      class="review-img"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <span class="fw-bold fs-4">Ch Mukesh</span><br /><span
+                      class="text-secondary"
+                      >Student | CBIT , Hyderabad</span
+                    >
+                  </div>
+                  <div class="col-5 col-md-4">
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                    <img
+                      src="./assets/images/star.svg"
+                      alt="Star"
+                      style="width: 20px"
+                    />
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <p class="text-secondary fs-5">
+                    I had the pleasure of exploring My-JUS, a website that
+                    provides an extensive range of courses on various
+                    tech-related topics. I was thoroughly impressed with my
+                    experience, as the website offers a comprehensive selection
+                    of courses that cater to different skill levels and
+                    interests. If you're looking to enhance your knowledge and
+                    skills in the tech industry, I highly recommend checking out
+                    My-JUS!
+                  </p>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
       </section>
       
-      <section class="faq bg-black pb-5">
+      <section class="faq bg-black pb-5 px-2">
         <div class="container">
           <div class="row text-center py-5">
               <span class="fw-bold banner-head">Frequently Asked Questions</span>
@@ -260,10 +375,10 @@
     </main>
 
     <footer>
-      <section class="footer border-top bg-black">
+      <section class="footer border-top bg-black px-2">
         <div class="container">
-          <div class="row">
-            <div class="col-3">
+          <div class="row row-cols-md-3 row-cols-sm-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <ul class="list-unstyled">
                 <li><span class="fs-4">About</span></li>
                 <li><a href="/about.html">Our Story</a></li>
@@ -271,7 +386,7 @@
                 <li><a href="faq.html">FAQ</a></li>
               </ul>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <ul class="list-unstyled">
                 <li><span class="fs-4">Quick Links</span></li>
                 <li><a href="course.html">Courses</a></li>
@@ -279,7 +394,7 @@
                 <li><a href="/home.html">Course Dashboard</a></li>
               </ul>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <ul class="list-unstyled">
                 <li><span class="fs-4">Social Links</span></li>
                 <li>Youtube</li>
@@ -287,7 +402,7 @@
                 <li>Github</li>
               </ul>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <ul class="list-unstyled">
                 <li><span class="fs-4">News Letter</span></li>
                 <li>
@@ -301,6 +416,9 @@
                 <li><button class="btn btn-primary">Subscribe</button></li>
               </ul>
             </div>
+          </div>
+          <div class="row text-center py-3">
+            <span class="text-white">© 2024 My-JUS. All rights reserved.</span>
           </div>
         </div>
       </section>
